@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Evgeniy Malashenko](https://up.htmlacademy.ru/adaptive/14/user/201086).
-* Наставник: `Неизвестно`.
+* Наставник: `отсутствует`.
 
 ---
 

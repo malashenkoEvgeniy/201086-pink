@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк форма</title>
+</head>
+<body>
+<header class="page-header">
+  <a class="page-header__logo" href="index.html">
+    <img src="#" alt="pink" class="page-header__logo-image" width="75" height="30">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle">Открыть меню</button>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item"><a href="#">Главная</a></li>
+      <li class="site-list__item"><a href="#">Фотографии</a></li>
+      <li class="site-list__item"><a href="#">Конкурс</a></li>
+      <li class="site-list__item"><a href="#">HTML Academy</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="page-form">
+  <h1 class="page-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  <section class="pink-form">
+    <b class="pink-form_call">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</b>
+    <form class="pink-form_form" action="https://echo.htmlacademy.ru" method="get">
+      <label for="surname"></label>
+      <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+      <label for="name"></label>
+      <input type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+      <label for="patronymic"></label>
+      <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+      <fieldset>
+        <legend>Ваши безбашенные достижения в путешествии</legend>
+        <input type="checkbox" name="selfie_with_shark" id="selfie_with_shark" >
+        <label for="selfie_with_shark">Сделал селфи с акулой</label>
+        <input type="checkbox" name="burnt_on_the_beach" id="burnt_on_the_beach">
+        <label for="burnt_on_the_beach">Обгорел на пляже</label>
+        <input type="checkbox" name="i_saw_chuck_norris" id="i_saw_chuck_norris">
+        <label for="i_saw_chuck_norris">Видел Чака Норриса</label>
+        <input type="checkbox" name="has_bought_souvenirs" id="has_bought_souvenirs">
+        <label for="has_bought_souvenirs">Накупил сувениров</label>
+        <input type="checkbox" name="i_kept_the_tower" id="i_kept_the_tower">
+        <label for="i_kept_the_tower">Удержал башню</label>
+        <input type="checkbox" name="defeated_the_hotel" id="defeated_the_hotel">
+        <label for="defeated_the_hotel">Разгромил отель</label>
+      </fieldset>
+      <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+      <label for="tel">Номер телефона</label>
+      <input type="email" name="email" id="email" placeholder="Введите почту *" required>
+      <label for="email">адрес почты</label>
+      <fieldset>
+        <legend>С каким приложением
+          путешествовали?</legend>
+        <input type="radio" name="attachment" id="ios" checked>
+        <label for="ios">Pink для iOS</label>
+        <input type="radio" name="attachment" id="android">
+        <label for="android">Pink на Android</label>
+        <input type="radio" name="attachment" id="windows">
+        <label for="windows">Windows Phone</label>
+      </fieldset>
+      <label for="emotions"></label>
+      <textarea name="emotions" id="emotions" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+      <button type="submit">Отправить форму</button>
+      <p>* — обязательные поля</p>
+
+    </form>
+
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <a class="page-header__logo">
+      <img src="#" alt="pink" class="page-header__logo-image" width="75" height="30">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Twitter</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы в YouTube</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

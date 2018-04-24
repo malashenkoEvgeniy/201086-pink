@@ -2,56 +2,67 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="#" alt="pink" class="page-header__logo-image" width="75" height="30">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">Главная</a></li>
-          <li class="site-list__item"><a href="#">Фотографии</a></li>
-          <li class="site-list__item"><a href="#">Конкурс</a></li>
-          <li class="site-list__item"><a href="#">HTML Academy</a></li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="pink" class="page-header__logo-image" width="75" height="22">
+        </a>
+        <button class="page-header__toggle"><span class="page-header__image">Открыть меню</span>></button>
+      </div>
+        <nav class="main-nav main-nav--active">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Конкурс</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
+          </ul>
+        </nav>
     </header>
     <main class="page-main">
+      <div class="main-body main-body--active"></div>
       <h1 class="visual-hidden">Pink-мобильное приложение для раскрашивания серых будней в розовый цвет!</h1>
       <section class="offer">
         <h2 class="visual-hidden">Блок с предложениями!</h2>
         <b class="offer__leeds">Взгляните на жизнь иначе!</b>
         <button class="offer__btn">Скачать приложение</button>
-        <ul class="offer__fetures">
-          <li class="offer__features-item"><a href="#">Айфон</a></li>
-          <li class="offer__features-item"><a href="#">Андройд</a></li>
-          <li class="offer__features-item"><a href="#">Виндовс</a></li>
+        <ul class="offer__features">
+          <li class="offer__features-item"><a class="offer__features-link offer__link-iphone" href="#">Айфон</a></li>
+          <li class="offer__features-item"><a class="offer__features-link offer__link-android" href="#">Андройд</a></li>
+          <li class="offer__features-item"><a class="offer__features-link offer__link-windows" href="#">Виндовс</a></li>
         </ul>
         <p class="offer__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
-      <section class="features">
-        <h2 class="visual-hidden">Блок с фичами!</h2>
-        <b class="features__slogan">Устали от серости мегаполиса?</b>
-        <p class="features__offer">Нам есть, что вам предложить!</p>
-        <ul>
-          <li>
-            <h3 class="features__title">Поднимает настроение</h3>
-            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li>
-            <h3 class="features__title">Меняет мир вокруг</h3>
-            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li>
-            <h3 class="features__title">Заводит новых друзей</h3>
-            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-      </section>
+
+        <section class="call">
+          <h2 class="visual-hidden">Блок с призывом!</h2>
+          <b class="call__slogan">Устали от серости мегаполиса?</b>
+          <p class="call__offer">Нам есть, что вам предложить!</p>
+        </section>>
+        <section class="features">
+          <h2 class="visual-hidden">Блок с фичами!</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__title">Поднимает настроение</h3>
+              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <div class="features__image"></div>
+        </section>
+
       <section class="reviews">
         <h2 class="visual-hidden">Блок с отзывами!</h2>
         <div class="reviews__wrapper slider">
@@ -70,12 +81,13 @@
             </li>
           </ul>
           <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider--active" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </div>
         </div>
       </section>
+
       <section class="our-products">
         <h2 class="visual-hidden">Блок с отзывами!</h2>
         <div class="our-products__wrapper slider">
@@ -83,25 +95,27 @@
             <li class="our-products__item slider__item">
               <h2 class="our-products__header">База</h2>
               <p class="our-products__price">1,99 USD</p>
-              <ul>
+              <ul class="our-products__description-list">
                 <li>Розовый фильтр</li>
                 <li>Смайлики</li>
                 <li>Комментарии</li>
               </ul>
             </li>
-            <li class="our-products__item slider__item">
+            <li class="our-products__item our-products--active slider__item our-products__hit">
               <h2 class="our-products__header">Стандарт</h2>
               <p class="our-products__price">3,99 USD</p>
-              <ul>
-                <li>Розовый фильтр</li>
-                <li>Смайлики</li>
-                <li>Комментарии</li>
-              </ul>
+              <div class="our-products__description">
+                <ul class="our-products__description-list">
+                  <li class="our-products__description-item">Розовый фильтр</li>
+                  <li class="our-products__description-item">Смайлики</li>
+                  <li class="our-products__description-item">Комментарии</li>
+                </ul>
+              </div>
             </li>
             <li class="our-products__item slider__item">
               <h2 class="our-products__header">Анлим</h2>
               <p class="our-products__price">9,99 USD</p>
-              <ul>
+              <ul class="our-products__description-list">
                 <li>Розовый фильтр</li>
                 <li>Смайлики</li>
                 <li>Комментарии</li>
@@ -130,6 +144,7 @@
         </ul>
         <div class="about-us__map"></div>
       </section>
+
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -155,5 +170,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

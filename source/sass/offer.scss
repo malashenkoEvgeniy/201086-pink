@@ -1,3 +1,71 @@
 .offer {
-  width: 2000px;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 270px;
+  margin-bottom: -30px;
+}
+
+.offer__leeds {
+  display: none;
+}
+
+.offer__btn {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: -35px;
+  margin-bottom: 30px;
+  padding: 15px 5px;
+  border-radius: 55px;
+  border: 2px solid #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.offer__features {
+  outline: 1px solid yellow;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 210px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.offer__features-item {
+  display: block;
+}
+
+.offer__features-link {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 65px;
+  height: 65px;
+  background-color: red;
+  font-size: 0;
+}
+
+.offer__link-iphone {
+  background: url("../img/logo-apple.svg") no-repeat 3px 0;
+}
+
+.offer__link-android {
+  background: url("../img/logo-android.svg") no-repeat 10px 10px;
+}
+
+.offer__link-windows {
+  background: url("../img/logo-microsoft.svg") no-repeat 15px 15px;
+}
+
+.offer__description {
+  width: 240px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
 }

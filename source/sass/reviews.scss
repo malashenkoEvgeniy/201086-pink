@@ -1,21 +1,20 @@
 .reviews {
   position: relative;
   width: 320px;
-  height: 370px;
-  margin: 0 auto;
-  margin-top: -90px;
+  min-height: 370px;
+  margin: 10px auto;
   background-color: #ffffff;
   overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
-    top: 355px;
-    left: -2px;
-    width: 360px;
+    bottom: -30px;
+    right: 0;
+    width: 320px;
     height: 50px;
     background-color: #f2f2f2;
-    transform: rotate(-4deg);
+    transform: rotate(-5deg) translateX(2px);
   }
 }
 
@@ -38,7 +37,7 @@
   font-weight: bold;
   text-align: center;
   padding-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .reviews__text {
@@ -64,6 +63,7 @@
   height: 10px;
   border: 1px solid #f2f2f2;
   padding: 0;
+  font-size: 0;
   border-radius: 50%;
   margin-right: 15px;
 }

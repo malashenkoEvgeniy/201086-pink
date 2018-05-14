@@ -1,0 +1,65 @@
+.proof {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .proof {
+    display: flex;
+    justify-content: flex-start;
+    width: 660px;
+    min-height: 440px;
+    background-color: #ffffff;
+    margin: 0 auto;
+  }
+
+  .proof__image {
+    width: 310px;
+    background-color: yellow;
+    margin-right: 10px;
+  }
+
+  .proof__wrapper {
+    width: 300px;
+    padding-top: 75px;
+    padding-left: 7px;
+  }
+
+  .proof__title {
+    width: 170px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .proof__title span {
+    display: block;
+  }
+
+  .proof__description {
+    width: 295px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: #283645;
+    margin-top: 10px;
+    padding-left: 3px;
+    margin-bottom: 10px;
+  }
+
+  .proof__description span {
+    display: block;
+  }
+
+  .proof__link {
+    width: 295px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: #d22856;
+    padding-left: 3px;
+  }
+}

@@ -1,10 +1,13 @@
+@import "variables";
 @import "fonts";
+@import "scaffolding";
 @import "page-header";
 @import "main-nav";
 @import "site-list";
 @import "offer";
 @import "call";
 @import "features";
+@import "proof";
 @import "reviews";
 @import "our-products";
 @import "about-us";
@@ -14,34 +17,3 @@
 @import "page-form";
 @import "page-photo";
 @import "photo-list";
-
-body {
-  min-width: 320px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.main-body {
-  height: 462px;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 47% 110px, #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% -65px;
-
-  &--active {
-    background: url("../img/iphone-hand-mobile@1x.png") no-repeat 47% 100%, #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
-    margin-bottom: 60px;
-  }
-}
-
-.visual-hidden {
-  display: none;
-}
-
-.features-wrapper {
-  background-color: #f2f2f2;
-  height: 1450px;
-  margin-bottom: 25px;
-}
-
-footer {
-  display: none;
-}

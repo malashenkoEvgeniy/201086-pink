@@ -1,32 +1,95 @@
 .features {
   width: 320px;
   margin: 0 auto;
+  background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .features__list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  width: 280px;
   list-style: none;
-  line-height: 24px;
-  padding-bottom: 5px;
+  margin: 0 auto;
+  padding: 0 0 5px 0;
+}
+
+.features__item {
+  border-top: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 .features__title {
   font-size: 18px;
-  padding-left: 10px;
-  margin-bottom: 0;
+  text-align: center;
+  margin-top: 42px;
+  margin-bottom: 15px;
 }
 
 .features__description {
+  display: block;
+  width: 270px;
   font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto -12px auto;
+  box-sizing: border-box;
 }
 
 .features__image {
   width: 157px;
   height: 320px;
-  margin: 0 auto;
-  background: url("../img/iphone-screen-mobile@1x.png") no-repeat 0 0;
-  margin-bottom: 55px;
+  margin: 7px auto 0 auto;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat 0 40px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .features {
+    position: relative;
+    width: 660px;
+    margin: 0 auto 50px auto;
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+
+  .features__list {
+    width: 330px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .features__title {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 45px;
+    margin-bottom: 15px;
+  }
+
+  .features__description {
+    display: block;
+    width: 300px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    margin: 0 auto -12px 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .features__image {
+    position: absolute;
+    top: -40px;
+    left: 3.5%;
+    width: 270px;
+    height: 601px;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: red url("../img/iphone-screen-mobile@1x.png") no-repeat 0 40px;
+    background-size: cover;
+    z-index: 999;
+  }
+}
+

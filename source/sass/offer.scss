@@ -1,8 +1,21 @@
 .offer {
   width: 320px;
   margin: 0 auto;
-  min-height: 270px;
-  margin-bottom: -30px;
+  margin-bottom: -16px;
+  padding-top: 392px;
+  min-height: 717px;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 103px, center -70px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.offer__wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  height: 270px;
+  background-color: #283645;
+  border-top: 1px solid transparent;
 }
 
 .offer__leeds {
@@ -12,10 +25,8 @@
 .offer__btn {
   display: block;
   width: 280px;
-  margin: 0 auto;
-  margin-top: -35px;
-  margin-bottom: 30px;
-  padding: 15px 5px;
+  margin: 25px auto 35px auto;
+  padding: 15px 0;
   border-radius: 55px;
   border: 2px solid #ffffff;
   font-size: 18px;
@@ -26,7 +37,6 @@
 }
 
 .offer__features {
-  outline: 1px solid yellow;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -68,4 +78,73 @@
   line-height: 24px;
   color: #ffffff;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .offer {
+    position: relative;
+    width: 660px;
+    min-height: 500px;
+    padding-top: 90px;
+    padding-bottom: 105px;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-position: center -70px;
+    background-repeat: no-repeat;
+    z-index: -2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 3%;
+      width: 470px;
+      height: 620px;
+      margin: 0 auto;
+      background: transparent url("../img/iphone-hand-mobile@1x.png") no-repeat 0 100px;
+      background-size: 100%;
+      z-index: -1;
+    }
+  }
+
+  .offer__wrapper {
+    background-color: transparent;
+    width: 300px;
+    height: 420px;
+    margin-left: 3%;
+  }
+
+  .offer__leeds {
+    display: block;
+    margin: 0 auto;
+    width: 195px;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 35px;
+  }
+
+  .offer__btn {
+    width: 300px;
+    margin: 25px auto 45px auto;
+  }
+
+  .offer__features {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 210px;
+    margin-bottom: 30px;
+  }
+
+  .offer__description {
+    width: 300px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+  }
 }
